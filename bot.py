@@ -1,6 +1,6 @@
 import os
 import telebot
-from google import genai
+import google.generativeai as genai
 from flask import Flask
 from threading import Thread
 
