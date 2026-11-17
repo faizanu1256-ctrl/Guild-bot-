@@ -12,7 +12,7 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 # Render पर ज़िंदा रखने के लिए
-app = Flask('')
+app = Flask('__name__')
 @app.route('/')
 def home():
     return "बॉट चालू है!"
