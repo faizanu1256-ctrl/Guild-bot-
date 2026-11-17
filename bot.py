@@ -8,5 +8,5 @@ def send_link(message):
     query = message.text
     response = f"आपको '{query}' के लिए यह लिंक मिला: https://example.com/search?q={query}"
     bot.reply_to(message, response)
-
+bot.deletewebhook()
 bot.infinity_polling()
